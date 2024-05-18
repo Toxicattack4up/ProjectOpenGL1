@@ -8,7 +8,7 @@ void display()
 
     glLoadIdentity();
     glTranslatef(0.0, 0.0, -3.0); // сдвигаем куб вглубь экрана
-    glRotatef(angle, -1.0, -1.0, -1.0); // вращаем в другую сторону
+    glRotatef(angle, -1.0, -1.0, -1.0); // вращаем куб
 
     glBegin(GL_QUADS);
     // передн€€ грань
@@ -76,7 +76,7 @@ int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-    glutInitWindowSize(800, 800); // увеличенное окно
+    glutInitWindowSize(800, 800); // размер окна
     glutInitWindowPosition(100, 100);
     glutCreateWindow("OpenGL - Colorful cube");
 
